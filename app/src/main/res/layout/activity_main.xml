@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42413D"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/warning_bt"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/button"
+        android:text="@string/button4"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:backgroundTint="#615C5B"
+        app:icon="@android:drawable/ic_dialog_alert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Parking_bt"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button"
+        android:text="@string/button2"
+        android:textSize="24sp"
+        app:backgroundTint="#615C5B"
+        app:icon="@android:drawable/ic_dialog_map"
+        app:layout_constraintBottom_toTopOf="@+id/warning_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fix_bt"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button"
+        android:text="@string/button1"
+        android:textSize="24sp"
+        app:backgroundTint="#615C5B"
+        app:icon="@android:drawable/ic_menu_manage"
+        app:layout_constraintBottom_toTopOf="@+id/oil_bt"
+        app:layout_constraintEnd_toStartOf="@+id/Parking_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/oil_bt"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/button"
+        android:text="@string/button3"
+        android:textSize="24sp"
+        app:backgroundTint="#615C5B"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/warning_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="339dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="36dp"
+        android:background="#393131"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gogoro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="193dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#BFB8B8"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/read_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="339dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="36dp"
+        android:background="#F3EBEB"
+        android:textColor="#F80658"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult2"
+        android:layout_width="339dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="36dp"
+        android:background="#F3EBEB"
+        android:textColor="#F80658"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/read_bt"
+        android:layout_width="126dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:text="@string/read_bt"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:backgroundTint="#615C5B"
+        app:icon="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
